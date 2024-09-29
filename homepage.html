@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ESL English lessons English with Kate</title>
+        <link rel="stylesheet" href="styles/app.css">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        
+    </head>   
+    
+    <body>
+      <div id="backdrop"></div>
+      <div class="navBar">  
+      <nav>
+        <ul>
+          <li><a href="#aboutMeText">About me</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#">Contact information</a></li>
+          <li><a href="#">Students' feedbacks</a></li>
+        </ul>
+        <button class="bookBtn">Book your first free lesson</button>
+      </nav>  
+      </div> 
+      <div class = "book" id="bookLesson">
+        <label for="firstName">First name</label>
+        <input type="text" name="firstName" id="firstName" />
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" />
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Mobile number</label>
+        <input type="tel" name="phone" id="phone" placeholder="111-222-3333" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+        <label for="chosenCourse">Choose your course:</label>
+        <select id="courses">
+          <option value="General English">General English</option>
+          <option value="IELTS Preparation">IELTS preparation</option>
+          <option value="Business English">Business English</option>
+        </select>
+        <div class = "actionButtons">
+          <button class="btn-submit">Submit</button>
+          <button class="btn-cancel">Cancel</button>
+        </div>
+      </div>
+
+      <div class="modal card" id="delete-modal">
+        <h2 class="modal__title">Are you sure?</h2>
+        <p class="modal__content">Are you sure you want to delete this item? This action can't be made undone!
+        </p>
+        <div class="modal__actions">
+          <button class="btn-cancel">No (cancel)</button>
+          <button class="btn-danger">Yes</button>
+        </div>
+      </div>
+
+      <ul id="checkoutCourseInfo"></ul>
+
+      <section class="about">
+        <div class="main">
+          <img src="images/Kate.JPG">
+          <div class="about-text">
+            <h1 id="aboutMeText">English with Kate</h1>
+            <h5>10 years' experience</h5>
+            <h5>Qualified TESOL teacher</h5>
+            <h5>Based in the UK</h5>
+            <h5>Tailor made lessons</h5>
+            <h5>Interactive platform</h5>
+            <h5>Flexible timetable</h5>
+            <h5>Any level welcome!</h5>
+            
+          </div>
+          
+        </div> 
+        
+        <div class="buttonContainer">
+        <button id="aboutMe">Find out more</button>
+        </div>
+
+        <div id="hiddenText">
+          <h2>10 years experience</h2>
+          <p>Hi! I'm Kate and I've been making people fall in love with English for 10 years. Throughout my career I've been teaching
+            students of different ages and from different countries, both face to face and online. I have taught English in Russia, in China and in the UK.
+            I don't promise miracles, it is a lot to do with your motivation and dedication, but I will help you find one.
+             and discover what you're capable of.
+          </p>
+          
+          <h2>Qualified TESOL teacher</h2>            
+          <p>I hold an internationally recognized Trinity TESOL certificate which I studied for in Southampton, the UK. </p>  
+
+          <h2>Based in the UK</h2>
+          <p>I live in England, so I can guarantee that the English you learn is 100% real and modern. I only teach words and expressions
+            that are used in real English by native speakers. However, I do not focus on British English only. I always give different accents 
+            and options, so that the students can choose what they prefer.
+          </p>
+
+          <h2>Tailor made lessons</h2>
+             <p>In your first lessons I will ask you about the reasons why you would like to learn English,
+              and we will outline your goals together. The lessons will be structured based on your goals and taking into account your
+              learning style. We will focus on the types of exercises that are interesting and effective for you.
+             </p>
+          <h2>Interactive platform</h2>
+          <p>All lessons are taught via an interactive platform, so there is no need to purchase any additional materials or write 
+            down anything in your notebook (you can if you want to). You can go back to the materials any time you want, they are always with
+          you as long as you have Internet access. </p>
+
+          <h2>Flexible timetable</h2>
+          <p>If you choose one-to-one lesson you won't have to have a strict timetable, we can always arrange lessons on different days and at 
+            different times if that suits you better.
+          </p>
+
+          <h2>Any level welcome!</h2>
+          <p>It doesn't matter whether you are an absolute beginner, quite an advanced English learner or are stuck somewhere in the middle
+            I'll help you get started and achieve the level you desire.
+          </p>
+    
+          English is a skill of the 21st century which gets you closer to your dreams whether it is to travel the world, find a good job in 
+          an international company, immigrate into the country you like or make friends all over the world. 
+           All you need to do to make your dream come true is to:
+           book your first free lesson
+           we will estimate your English level and outline the goals
+           start learning
+          <br>
+
+        </div>
+      </section>  
+
+
+      <!-- styling the sliding menu. Info about courses-->  
+      <section class="courses">
+        <h2 class="ourCourses" id="courses">Choose your desirable course</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt="arrow"></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt="arrow"></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/bus1.jpg" alt="London red bus">
+              <h2 class="course-name">General English</h2>
+              <p class="course-description">Some motivational words about general english course</p>  
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/big ben.jpg" alt="Big Ben">
+              <h2 class="course-name">General English</h2>
+              <p class="course-description">Some motivational words about general english course</p>  
+            </div>
+
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/statue.jpg" alt="The statue of liberty">
+            </div>
+            <div class="course-info">
+              <h2 class="course-name">General English</h2>
+              <p class="course-description">Some motivational words about general english course</p>  
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/sydney.jpg" alt="Sydney opera house">
+            </div>
+            <div class="course-info">
+              <h2 class="course-name">General English</h2>
+              <p class="course-description">Some motivational words about general english course</p>  
+            </div>
+          </div>
+
+        </div> 
+      </section>
+      
+      <script src="javascript/backend.js"></script>
+    </body>    
+</html>
